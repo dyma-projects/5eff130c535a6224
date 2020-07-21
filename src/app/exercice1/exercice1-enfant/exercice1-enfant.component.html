@@ -1,9 +1,11 @@
 <br />
-<span> valeur du compteur : </span>
+<!-- Affichage de la valeur du compteur reçu par le parent-->
+<span> valeur du compteur : {{compteur}} </span>
 <br />
 <br />
-<button> + </button>
+<!-- boutton qui va envoyé le caractère + ou - à la méthode valleurClick du même composant-->
+<button (click)="valleurClick('+')"> + </button>
 <br />
 <br />
-<button> - </button>
+<button (click)="valleurClick('-')"> - </button>
 <br>

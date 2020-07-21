@@ -2,7 +2,12 @@
 <br/>
 <br/>
 <h3>Exercice 1 : mise en place de Output et Input </h3>
-<app-exercice1-enfant></app-exercice1-enfant>
+<!-- Injection du template enfant dans le composant parent valeurClick et l'output de l'enfant
+qui va passer sa valeur à la méthode valleurClick avec l'évenement en paramètre compteur
+et un dataBinding pour transmettre le contenu à l'input de l'enfant pour que l'enfant puisse l'affiché dans son template-->
+<app-exercice1-enfant (valeurClick)="valleurClick($event)" [compteur]="compteur"></app-exercice1-enfant>
 <br/>
-<span> compteur : {{ result }}</span>
+<!-- Affichage de la variable compteur du composant même-->
+<span> compteur : {{compteur}}</span>
 <hr>
+
